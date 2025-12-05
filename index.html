@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS de Validação Telefônica</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable dark mode based on the 'dark' class
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1E40AF', // Deep Blue/Indigo for strong actions (WCAG AA/AAA compliant)
+              secondary: '#E5E7EB', // Light Gray (Tailwind gray-200) for secondary buttons (WCAG AA/AAA compliant with dark text)
+              accent: '#059669', // Dark Green for accents (WCAG AA compliant)
+              neutral: '#F9FAFB', // Light gray background
+              text: '#374151', // Darker gray for text
+
+              // Dark mode specific colors
+              'dark-bg': '#111827', // A very dark gray for the main body background (Tailwind gray-900)
+              'dark-text': '#E5E7EB', // Light gray for text on dark backgrounds (Tailwind gray-200)
+              'dark-card-bg': '#1F2937', // Slightly lighter dark gray for cards/sections (Tailwind gray-800)
+              'dark-secondary-btn': '#374151', // Dark gray for secondary buttons in dark mode (Tailwind gray-700)
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+  }
+}
+</script>
+</head>
+<body class="bg-neutral text-text font-sans antialiased dark:bg-dark-bg dark:text-dark-text">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

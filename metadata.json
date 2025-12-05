@@ -1,0 +1,5 @@
+{
+  "name": "Protótipo SaaS de Validação Telefônica",
+  "description": "Um protótipo para uma plataforma SaaS que utiliza validação por voz impulsionada por IA para números de telefone de fornecedores, incluindo web scraping, normalização ITU-T E.164 e um painel web/mobile.",
+  "requestFramePermissions": []
+}
